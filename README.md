@@ -20,12 +20,6 @@ An eCommerce web application built with modern front-end technologies, providing
 - **Zustand**: Lightweight state management library.
 - **React Router**: Declarative routing for navigation between pages.
 
-## Screenshots
-
-<!-- Add screenshots of the homepage, product page, cart page, and wishlist here -->
-
-![Screenshot Placeholder](link-to-your-screenshot.png)
-
 ## Installation and Setup
 
 To set up the project locally, follow these steps:
