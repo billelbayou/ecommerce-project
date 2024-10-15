@@ -42,3 +42,7 @@
   src: local("Archivo-Thin"), url("./assets/fonts/Archivo-Thin.ttf"),
     format("truetype");
 }
+
+.categ:hover h3 {
+  text-decoration: underline;
+}

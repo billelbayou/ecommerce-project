@@ -1,18 +1,35 @@
+import Home from "./pages/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ProductPage from "./pages/ProductPage";
+import CategoryPage from "./pages/CategoryPage";
+import Cart from "./pages/Cart";
+import Wishlist from "./pages/Wishlist";
 export default function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/product/:id",
+      element: <ProductPage />,
+    },
+    {
+      path: "/category/:name",
+      element: <CategoryPage />,
+    },
+    {
+      path: "/cart",
+      element: <Cart />,
+    },
+    {
+      path: "/wishlist",
+      element: <Wishlist />,
+    },
+  ]);
   return (
-    <>
-      <header className="flex justify-between items-center p-4 shadow-lg">
-        <h1 className="text-3xl">Logo</h1>
-        <ul className="flex items-center text-xl">
-          <li className="m-2">About</li>
-          <li className="m-2">Contact</li>
-          <li className="m-2">Services</li>
-          <li className="m-2">Billel</li>
-        </ul>
-      </header>
-      <main>
-        
-      </main>
-    </>
-  )
+    <div className="font-primaryRegular">
+      <RouterProvider router={router} />
+    </div>
+  );
 }

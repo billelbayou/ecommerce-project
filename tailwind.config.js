@@ -13,6 +13,12 @@ export default {
         primaryThin: ["Thin"],
         primarySemiBold: ["SemiBold"],
       },
+      colors: {
+        primary: "#1d1d1d",
+        secondary: "#76787a",
+        accent: "#ff540a",
+        backgound: "#eee"
+      }
     },
   },
   plugins: [],
